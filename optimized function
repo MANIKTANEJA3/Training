@@ -1,0 +1,13 @@
+def better_batch_function(a,b):
+    return -(-a//b)
+
+batch_size = 70
+
+input_data = len(en)
+better_batch_input = better_batch_function(input_data, better_batch_function(input_data, batch_size))
+
+for i in range(better_batch_function(input_data, better_batch_input)):
+    batch_input = en[i * better_batch_input: (i+1) * better_batch_input:]
+    #map(i,int(len(batch_input)))
+    print(i,len(batch_input))
+print("total number of batches are" + " =  " + str(int(i+1)))
